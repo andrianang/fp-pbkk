@@ -13,20 +13,31 @@ class BandaraTableSeeder extends Seeder
     public function run(): void
     {
     $airports = [
-        [   'nama_bandara' => 'Bandar Udara Internasional Soekarno-Hatta',
-            'id_kota' => 1,
-            'kode' => 'CGK',    
+        [   'nama_bandara' => 'Bandara Internasional Kualanamu',
+            'id_kota' => 4,
+            'kode' => 'KNO',    
         ],
         
             
-        [   'nama_bandara' => 'Bandar Udara Internasional Juanda',
-            'id_kota' => 2,
-            'kode' => 'SUB'    
+        [   'nama_bandara' => 'Bandara Internasional Sultan Hasanuddin',
+            'id_kota' => 5,
+            'kode' => 'UPG'    
         ],
 
-        [   'nama_bandara' => 'Bandar Udara Internasional Jenderal Ahmad Yani',
-            'id_kota' => 3,
-            'kode' => 'SRG'    
+        [   'nama_bandara' => 'Bandara Internasional Husein Sastranegara',
+            'id_kota' => 8,
+            'kode' => 'BDO'    
+        ],
+
+        [   'nama_bandara' => 'Bandara Sultan Syarif Qasim II',
+            'id_kota' => 7,
+            'kode' => 'PKU
+            '    
+        ],
+        
+        [   'nama_bandara' => 'Bandara Internasional Ngurah Rai',
+            'id_kota' => 6,
+            'kode' => 'DPS'    
         ],
             
         ];

@@ -13,10 +13,10 @@ class Rute extends Model
     protected $guarded = ['id'];
 
     public function bandara_asal(){
-        return $this->belongsTo(Bandara::class);
+        return $this->belongsTo(Bandara::class, 'bandara_id_asal');
     }
     
     public function bandara_tujuan(){
-        return $this->belongsTo(Bandara::class);
+        return $this->belongsTo(Bandara::class, 'bandara_id_tujuan');
     }
 }

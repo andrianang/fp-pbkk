@@ -13,16 +13,23 @@ class ProvinsiTableSeeder extends Seeder
     public function run(): void
     {
     $provincies = [
-        [   'nama_provinsi' => 'DKI Jakarta',
+        [   'nama_provinsi' => 'Sumatra Utara',
             'id_negara' => 1    
         ],
         
-            
-        [   'nama_provinsi' => 'Jawa Timur',
+        [   'nama_provinsi' => 'Sulawesi Selatan',
             'id_negara' => 1    
         ],
 
-        [   'nama_provinsi' => 'Jawa Tengah',
+        [   'nama_provinsi' => 'Bali',
+            'id_negara' => 1    
+        ],
+
+        [   'nama_provinsi' => 'Riau',
+            'id_negara' => 1    
+        ],
+
+        [   'nama_provinsi' => 'Jawa Barat',
             'id_negara' => 1    
         ],
     ];
