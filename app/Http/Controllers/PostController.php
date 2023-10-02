@@ -10,7 +10,6 @@ class PostController extends Controller
     
     public function index(){
         $posts = Penerbangan::all(); 
-    
         return response()->json(['posts' => $posts]);
     }
 }
