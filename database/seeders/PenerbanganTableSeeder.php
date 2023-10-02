@@ -14,26 +14,42 @@ class PenerbanganTableSeeder extends Seeder
     public function run(): void
     {
         $tickets = [
+<<<<<<< HEAD
             [   'maskapai_id' => 3,
                 'rute_id' => 4, 
+=======
+            [   'maskapai_id' => 1,
+                'rute_id' => 1, 
+>>>>>>> 1eefb173ec858114943c6efbfa11177b67fb618c
                 'harga' => 769000,
                 'bagasi' => 20,
                 'bagasi_cabin' => 7,
             ],
             
             [   'maskapai_id' => 2,
+<<<<<<< HEAD
                 'rute_id' => 5, 
                 'harga' => 459000,
+=======
+                'rute_id' => 2, 
+                'harga' => 329000,
+>>>>>>> 1eefb173ec858114943c6efbfa11177b67fb618c
                 'bagasi' => 20,
                 'bagasi_cabin' => 7,
             ],
     
+<<<<<<< HEAD
             [   'maskapai_id' => 1,
                 'rute_id' => 6, 
+=======
+            [   'maskapai_id' => 3,
+                'rute_id' => 3, 
+>>>>>>> 1eefb173ec858114943c6efbfa11177b67fb618c
                 'harga' => 549000,
                 'bagasi' => 20,
                 'bagasi_cabin' => 7,
             ],
+<<<<<<< HEAD
 
             [   'maskapai_id' => 4,
                 'rute_id' => 7, 
@@ -62,6 +78,8 @@ class PenerbanganTableSeeder extends Seeder
                 'bagasi' => 20,
                 'bagasi_cabin' => 7,
             ],
+=======
+>>>>>>> 1eefb173ec858114943c6efbfa11177b67fb618c
         ];
     
             foreach($tickets as $ticket){

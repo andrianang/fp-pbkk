@@ -15,6 +15,7 @@ class RuteTableSeeder extends Seeder
     public function run(): void
     {
         $Routes = [
+<<<<<<< HEAD
             [   'keberangkatan' => Carbon::create(2023, 10, 16, 06, 30, 0),
                 'kedatangan' => Carbon::create(2023, 10, 16, 7, 40, 0), 
                 'durasi_penerbangan' => CarbonInterval::hours(0)->minutes(50)->format('%H:%I:%S'),
@@ -61,6 +62,27 @@ class RuteTableSeeder extends Seeder
                 'durasi_penerbangan' => CarbonInterval::hours(2)->minutes(00)->format('%H:%I:%S'),
                 'bandara_id_asal' => 2,
                 'bandara_id_tujuan' => 8,
+=======
+            [   'keberangkatan' => Carbon::create(2023, 10, 15, 14, 30, 0),
+                'kedatangan' => Carbon::create(2023, 10, 15, 15, 40, 0), 
+                'durasi_penerbangan' => CarbonInterval::hours(1)->minutes(10)->format('%H:%I:%S'),
+                'bandara_id_asal' => 1,
+                'bandara_id_tujuan' => 2,
+            ],
+            
+            [   'keberangkatan' => Carbon::create(2023, 10, 15, 14, 30, 0),
+                'kedatangan' => Carbon::create(2023, 10, 15, 15, 40, 0), 
+                'durasi_penerbangan' => CarbonInterval::hours(1)->minutes(10)->format('%H:%I:%S'),
+                'bandara_id_asal' => 2,
+                'bandara_id_tujuan' => 3,
+            ],
+    
+            [   'keberangkatan' => Carbon::create(2023, 10, 15, 14, 30, 0),
+                'kedatangan' => Carbon::create(2023, 10, 15, 15, 40, 0), 
+                'durasi_penerbangan' => CarbonInterval::hours(1)->minutes(10)->format('%H:%I:%S'),
+                'bandara_id_asal' => 1,
+                'bandara_id_tujuan' => 3,
+>>>>>>> 1eefb173ec858114943c6efbfa11177b67fb618c
             ],
         ];
     

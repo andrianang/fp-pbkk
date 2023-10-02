@@ -13,6 +13,7 @@ class KotaTableSeeder extends Seeder
     public function run(): void
     {
         $cities = [
+<<<<<<< HEAD
             [   'nama_kota' => 'Medan',
                 'id_provinsi' => 4 
             ],
@@ -33,6 +34,22 @@ class KotaTableSeeder extends Seeder
             ],
         ];
         
+=======
+            [   'nama_kota' => 'Jakarta',
+                'id_provinsi' => 1    
+            ],
+            
+                
+            [   'nama_kota' => 'Surabaya',
+                'id_provinsi' => 2    
+            ],
+    
+            [   'nama_kota' => 'Semarang',
+                'id_provinsi' => 3    
+            ],
+        ];
+    
+>>>>>>> 1eefb173ec858114943c6efbfa11177b67fb618c
             foreach($cities as $city){
                 $city_i = new Kota();
                 $city_i->nama_kota = $city['nama_kota'];
