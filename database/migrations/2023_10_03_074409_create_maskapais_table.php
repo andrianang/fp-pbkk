@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('rute', function (Blueprint $table) {
-            $table->time('durasi_penerbangan')->change();
+        Schema::create('maskapais', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->string('nama_maskapai')->notNullable();
+            $table->string('image_path')->nullable();
         });
     }
 
@@ -21,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('maskapais');
     }
 };
