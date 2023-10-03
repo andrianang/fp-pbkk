@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('bandara', function (Blueprint $table) {
+        Schema::create('bandaras', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->string('nama_bandara')->notNullable();
             $table->string('kode')->notNullable();
-        });
-        Schema::table('rute', function (Blueprint $table) {
-            $table->dropColumn('kode');
+            $table->foreignId('kota_id')->notNullable();
         });
     }
 
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('bandaras');
     }
 };

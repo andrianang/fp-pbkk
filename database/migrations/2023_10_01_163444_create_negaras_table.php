@@ -11,17 +11,18 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('penerbangan', function (Blueprint $table) {
-            // Define the column with a default value and make it not nullable
-            $table->timestamps();                                               
+        Schema::create('negaras', function (Blueprint $table) {
+            $table->id()->notNullable();
+            $table->string('nama_negara')->notNullable();
+            $table->timestamps();
         });
-    }                                                
+    }
 
     /**
      * Reverse the migrations.
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('table');
     }
 };

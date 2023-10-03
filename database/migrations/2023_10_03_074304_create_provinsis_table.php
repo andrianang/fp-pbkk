@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('maskapai', function (Blueprint $table) {
-            $table->string('images_path')->nullable(); // Change 'new_column' and data type as needed
+        Schema::create('provinsis', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->string('nama_provinsi')->notNullable();
+            $table->foreignId('negara_id')->notNullable();;
         });
     }
 
@@ -21,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('provinsis');
     }
 };

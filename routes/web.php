@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PenerbanganController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 /*
@@ -13,4 +14,4 @@ use App\Http\Controllers\PostController;
 |
 */
 
-Route::get('/', [PostController::class, 'index']);
+Route::get('/', [PenerbanganController::class, 'index']);

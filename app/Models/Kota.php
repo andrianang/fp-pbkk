@@ -9,7 +9,7 @@ class Kota extends Model
 {
     use HasFactory;
     
-    protected $table ='kota';
+    protected $table ='kotas';
     protected $guarded = ['id'];
 
     public function provinsi(){

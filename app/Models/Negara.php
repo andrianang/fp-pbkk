@@ -9,7 +9,7 @@ class Negara extends Model
 {
     use HasFactory;
 
-    protected $table = 'negara';
+    protected $table = 'negaras';
     protected $guarded = ['id'];
 
     public function kota(){

@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('rute', function (Blueprint $table) {
-            $table->renameColumn('bandara_id_kedatangan', 'bandara_id_tujuan');
-            $table->renameColumn('bandara_id_keberangkatan', 'bandara_id_asal');
+        Schema::create('kotas', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+            $table->string('nama_kota')->notNullable();
+            $table->foreignId('provinsi_id')->notNullable();
         });
     }
 
@@ -22,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('kotas');
     }
 };

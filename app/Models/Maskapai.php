@@ -9,7 +9,11 @@ class Maskapai extends Model
 {
     use HasFactory;
 
-    protected $table = "maskapai";
+    protected $table = "maskapais";
     protected $guarded = ['id'];
+
+    
+
+
     
 }

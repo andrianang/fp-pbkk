@@ -9,7 +9,7 @@ class Rute extends Model
 {
     use HasFactory;
 
-    protected $table = "rute";
+    protected $table = "rutes";
     protected $guarded = ['id'];
 
     public function bandara_asal(){

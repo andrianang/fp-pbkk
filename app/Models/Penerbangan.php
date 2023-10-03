@@ -10,7 +10,7 @@ class Penerbangan extends Model
     use HasFactory;
 
     
-    protected $table = 'penerbangan';
+    protected $table = 'penerbangans';
     protected $guarded = ['id'];
 
     public function maskapai(){
